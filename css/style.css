@@ -13,14 +13,18 @@
 }
 
 body {
-    position: relative;
+    background-color: black;
 }
 
 .sectionone {
     display: flex;
-    position: absolute;
-    z-index: 99999999999999999999999999999999;
     left: -250px;
+    z-index: 999999;
+    position: fixed;
+}
+
+#btnclose {
+    display: none;
 }
 
 .logos {
@@ -29,6 +33,7 @@ body {
 
 .fas {
     font-size: 24px!important;
+    cursor: pointer;
 }
 
 .logos img {
@@ -44,9 +49,9 @@ body {
     background-color: black;
 }
 
-.item {
+.item1 {
     opacity: 1;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 ul {
@@ -60,6 +65,8 @@ ul {
     padding-right: 70px;
     cursor: pointer;
     text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 .menu a:hover {
@@ -71,7 +78,34 @@ ul {
 }
 
 .second {
-    background-color: rgb(238, 23, 23);
-    height: 90px;
+    /* background-color: gray; */
+    height: 96px;
     margin: auto;
+}
+
+.searchinput {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 19px;
+}
+
+.second input {
+    text-align: center;
+    border-radius: 0px !important;
+    background-color: black !important;
+}
+
+.search1 {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.myForm input {
+    text-align: center;
+    border-radius: 0px !important;
+    background-color: black !important;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: 800;
 }
